@@ -1,14 +1,17 @@
+# Use the official WordPress image from the Docker Hub
 FROM wordpress:latest
 
-# 安装一些推荐的 PHP 扩展
-RUN apt-get update && apt-get install -y \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libpng-dev \
-    libwebp-dev \
-    libxpm-dev \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp --with-xpm \
-    && docker-php-ext-install -j$(nproc) gd
+# Set the environment variables for WordPress database connection
+ENV WORDPRESS_DB_HOST=${dpg-cq8r77dds78s7394sarg-a}
+ENV WORDPRESS_DB_NAME=${blog_0dyn}
+ENV WORDPRESS_DB_USER=${blog_0dyn_user}
+ENV WORDPRESS_DB_PASSWORD=${bBTgJH8s03X0XsY5mdrQRelMLoZmZ44n}
 
-# 复制 wp-config.php 文件，替换环境变量
+# Copy wp-config.php to the container
 COPY wp-config.php /var/www/html/
+
+# Expose port 80 for the web server
+EXPOSE 80
+
+# Start WordPress
+CMD ["apache2-foreground"]
