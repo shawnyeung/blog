@@ -1,8 +1,9 @@
 <?php
-define( 'DB_NAME', getenv('DB_NAME') );
-define( 'DB_USER', getenv('DB_USER') );
-define( 'DB_PASSWORD', getenv('DB_PASSWORD') );
-define( 'DB_HOST', getenv('DB_HOST') );
+define( 'DB_NAME', getenv('blog') );
+define( 'DB_USER', getenv('blog_0dyn_user') );
+define( 'DB_PASSWORD', getenv('bBTgJH8s03X0XsY5mdrQRelMLoZmZ44n') );
+define( 'DB_PORT', getenv('5432') );
+define( 'DB_HOST', getenv('postgresql://blog_0dyn_user:bBTgJH8s03X0XsY5mdrQRelMLoZmZ44n@dpg-cq8r77dds78s7394sarg-a/blog_0dyn') );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 
