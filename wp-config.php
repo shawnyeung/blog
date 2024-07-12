@@ -3,7 +3,7 @@ define( 'DB_NAME', getenv('blog_0dyn') );
 define( 'DB_USER', getenv('blog_0dyn_user') );
 define( 'DB_PASSWORD', getenv('bBTgJH8s03X0XsY5mdrQRelMLoZmZ44n') );
 define( 'DB_PORT', getenv('5432') );
-define( 'DB_HOST', getenv('postgresql://blog_0dyn_user:bBTgJH8s03X0XsY5mdrQRelMLoZmZ44n@dpg-cq8r77dds78s7394sarg-a.singapore-postgres.render.com/blog_0dyn') );
+define( 'DB_HOST', getenv('dpg-cq8r77dds78s7394sarg-a') );
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', '' );
 
