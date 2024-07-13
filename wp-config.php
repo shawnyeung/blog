@@ -1,5 +1,5 @@
 <?php
-define( 'DB_NAME', getenv('blog_0dyn') );
+define( 'DB_NAME', getenv('blog') );
 define( 'DB_USER', getenv('blog_0dyn_user') );
 define( 'DB_PASSWORD', getenv('bBTgJH8s03X0XsY5mdrQRelMLoZmZ44n') );
 define( 'DB_PORT', getenv('5432') );
